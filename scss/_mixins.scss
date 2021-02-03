@@ -1,0 +1,28 @@
+@mixin button {
+  border: solid;
+  border-color: $myColor;
+  border-width: 2px;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: $myText;
+  display: inline-block;
+  font-weight:$myfont;
+  font-size: 13px;
+  margin:0 10px 0 0;
+}
+
+@mixin icon {
+  border: solid;
+  background-color: $myColor;
+  border-color: white;
+  color: white;
+  border-width: 3px;
+  padding: 9px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0px 0 0;
+}

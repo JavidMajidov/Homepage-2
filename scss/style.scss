@@ -1,0 +1,162 @@
+@import "_variables";
+@import "_mixins";
+
+
+// ..............................................
+//                  main1
+// ..............................................                 
+
+#tablo1 {
+    padding: 80px;
+}
+
+.text {
+    margin: 150px 0 0 -60px;
+}
+
+#lol {
+  padding: 30px 0 0 0;
+}
+
+.display-4{
+  font-weight:$myfont;
+}
+
+.nav-link:hover {
+  color: $myColor !important;
+}
+
+.button1 {
+  @include button;
+  background-color: $myColor;
+  color: white;
+}
+
+.button1:hover{
+  background-color: $hoverColor !important;
+  border-color: $hoverColor !important;
+  transition: 1s;
+}
+
+.button2 {
+  @include button;
+  background-color: white;
+  color: $myColor;
+}
+
+.button2:hover{
+  background-color: $myColor !important;
+  color: white;
+  transition: 1s;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  text-transform: $myText;
+}
+
+#navr {
+ a {
+   font-size: 13px;
+   margin:0 0 0 19px;
+   color: rgb(58, 57, 57);
+   text-transform: $myText;
+ }
+}
+
+
+// ...............................................
+//                   main2
+// ...............................................
+
+.main2 {
+  padding: 100px 0 100px 0;
+  background-color: #EAEDF2FF;
+}
+
+#ab {
+  h3 {
+    font-weight:$myfont;
+    font-size: 35px ;
+    margin: 0 0 15px 0;
+  }
+  
+  span:after {
+  content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 76px 13px;
+    height: 2px;
+    background: $myColor;
+    width: 50px;
+  }
+  p {
+    font-size: 14px;
+    margin: 15px 0 50px 0;
+  }
+}
+
+
+#img {
+  max-width: 100%;
+}
+
+.img {
+  border: 14px solid white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.icon {
+   width: 50px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background: #ffffff;
+    padding: 4px;
+}
+
+#icon {
+  @include icon;
+}
+
+#icon:hover {
+  background-color:$hoverColor;
+  transition: 1s;
+}
+
+.col-lg-7 {
+
+  margin: 20px 0  0 0px;
+  
+  h4{
+    font-weight:$myfont;
+    font-size: 32px;
+    padding: 0 0 0 40px;
+  }
+
+  h6 {
+    font-size: 20px;
+    padding: 0 0 15px 40px;
+      span { color:$myColor; }
+  }
+
+  .pp {padding: 0 0 15px 40px;}
+
+  .row {padding: 0 0 0 40px;
+
+      label {
+        font-weight: 500;
+        border-right: 1px solid #c1c1c1;
+        flex: 0 0 90px;
+      }
+
+      p {
+        margin: 0 0 0 18px;
+        color:#595A7AFF;
+      }
+  }
+
+  button {margin: 25px 0 0 40px;}
+}
